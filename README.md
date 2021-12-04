@@ -36,22 +36,56 @@ DELIVERABLE CODE
 
 ![image](https://github.com/derekhuggens/Pewlett_Hackard_Analysis/blob/60eb4df37e871fb9748fb24db2e15a7a0e655d29/retiring_titles.png)
 
-  * a
-  * b
+
+The above image shows the number of employees retiring from each job title.
+
+
+  * The company has a nice distribution (rounding down) of 2:1 Senior Engineers to Engineers and Senior Staff to Staff.
+  * The count of 2 with the Manager title must be addressed with replacement before their departure.
   
   
 ![image](https://github.com/derekhuggens/Pewlett_Hackard_Analysis/blob/60eb4df37e871fb9748fb24db2e15a7a0e655d29/mentorship_eligibility.png)
   
   
-  * c
-  * d
+The above image shows the employees that are eligible for the mentorship program.  
+  * Since we ordered by employee number, we can see that some employees with a larger employee number does not mean that they necessarily started sooner than an employee with a smaller employee number (as seen in the from_date column), showing that employee numbers may be assigned arbitrarily.
+  * Ordering by from_date would be able to show us which employees started earliest with the company and may be approached as senior mentors potentially.
+  * There are 1549 employees eligible for the mentorship program, with a much larger sum of current employees vs. retired, leading to large mentorship class sizes.
 
 ## Summary
 
 * How many roles will need to be filled as the "silver tsunami" begins to make an impact?
-    A
-* Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees? 
-    B
-    
-QUERIES
 
+    41380 roles will need to be filled.
+    
+    Obtained by the query:
+    
+    SELECT COUNT(emp_no)
+    FROM retirement_info;
+    
+* Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees? 
+    
+    There are 1549 employees in the mentorship eligibility table. 
+    
+    Obtained by the query:
+    
+    SELECT COUNT(emp_no)
+    FROM mentorship_eligibility;
+       
+    Number of retirement-ready employees qualified to mentor: 85
+    
+    Obtained by the query:
+    
+    SELECT COUNT(emp_no)
+    FROM mentorship_eligibility
+	    WHERE to_date != '9999-01-01';
+      
+    Number of employees that could be mentored: 1464
+    
+    Obtained by the query:
+    
+    SELECT COUNT(emp_no)
+    FROM mentorship_eligibility
+	    WHERE to_date = '9999-01-01';
+
+    There is a 17:1 ratio of next generation employees to qualified, retirement-ready employees.
