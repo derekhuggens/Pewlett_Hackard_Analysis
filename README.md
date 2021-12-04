@@ -33,8 +33,16 @@ DELIVERABLE CODE
 
 ## Results
 
+
+![image](https://github.com/derekhuggens/Pewlett_Hackard_Analysis/blob/60eb4df37e871fb9748fb24db2e15a7a0e655d29/retiring_titles.png)
+
   * a
   * b
+  
+  
+![image](https://github.com/derekhuggens/Pewlett_Hackard_Analysis/blob/60eb4df37e871fb9748fb24db2e15a7a0e655d29/mentorship_eligibility.png)
+  
+  
   * c
   * d
 
