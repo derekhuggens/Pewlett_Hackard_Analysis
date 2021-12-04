@@ -6,4 +6,4 @@
 
 -- DELIVERABLES
 
-[image!](https://github.com/derekhuggens/Pewlett_Hackard_Analysis/blob/9c4851895ab2c53fa7f20e2f0a86e4dd5d19ae24/Deliverables.png)
+![image](https://github.com/derekhuggens/Pewlett_Hackard_Analysis/blob/9c4851895ab2c53fa7f20e2f0a86e4dd5d19ae24/Deliverables.png)
