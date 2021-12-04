@@ -10,16 +10,26 @@ From these 6 tables, 12 more tables were created to answer questions such as: Wh
   1. Employee information: unique employee number, last name, first name, gender, salary.
   2. Manager information: managers by department, their department number, their unique employee number, first name, last name, starting and ending employment dates.
   3. Department retiree information: a list of current employees that added what departments they are in to find out how departments will be affected by upcoming retirements.
+ 
 From these 3 lists, two more requests were made:
+
   1. Sales department management asked for a query to obtain the Sales only employee numbers, first names, and last names.
   2. The company wants to start a mentorship program for Sales, so a query was written to create a table that contains employee numbers, first and last names, and department names where the departments can only be either Sales or Development.
 
-## Results
+Finally, two deliverables were requested from management.
 
+  1. The number of retiring employees by title.
+  2. The employees eligible for the mentorship program.
 
+Below is the code for the two deliverables.
 
 DELIVERABLE CODE
 
 ![image](https://github.com/derekhuggens/Pewlett_Hackard_Analysis/blob/9c4851895ab2c53fa7f20e2f0a86e4dd5d19ae24/Deliverables.png)
+
+
+## Results
+
+
 
 ## Summary
